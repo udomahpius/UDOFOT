@@ -143,3 +143,31 @@ jQuery( document ).ready(function( $ ) {
     })
  
 });
+
+
+// javascript section
+
+let hidden_section = document.querySelector('.button-hide-1');
+let arrow_1 = document.querySelector('.arrow-up-1');
+let arrow_2 = document.querySelector(".arrow-down-1");
+let view_hidden_content_1 = document.querySelector('.view-1');
+let statement = false;
+
+arrow_1.classList.add("hide");
+view_hidden_content_1.classList.add("hide")
+
+
+hidden_section.addEventListener('click', () => {
+    if (!statement) {
+        arrow_1.classList.remove("hide");
+        view_hidden_content_1.classList.remove("hide");
+        arrow_2.classList.add("hide");
+        statement = true;
+    } else {
+        arrow_1.classList.add("hide");
+        view_hidden_content_1.classList.add("hide");
+        arrow_2.classList.remove("hide");
+        statement = false;
+
+    }
+})
