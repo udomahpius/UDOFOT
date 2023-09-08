@@ -34,11 +34,11 @@ jQuery( document ).ready(function( $ ) {
 		if ($('.owl-testimonials').length) {
             $('.owl-testimonials').owlCarousel({
                 loop: true,
-                nav: false,
+                nav:false,
                 dots: true,
                 items: 1,
                 margin: 30,
-                autoplay: false,
+                autoplay: true,
                 smartSpeed: 700,
                 autoplayTimeout: 6000,
                 responsive: {
@@ -60,6 +60,8 @@ jQuery( document ).ready(function( $ ) {
                     }
                 }
             });
+
+    
         }
         if ($('.owl-partners').length) {
             $('.owl-partners').owlCarousel({
