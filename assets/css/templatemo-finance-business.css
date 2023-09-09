@@ -877,18 +877,20 @@ ul.slick-dots {
 
 .partners {
 	margin-top: 140px;
-	background-color: #f7f7f7;
+	background-color: #000000;
 	padding: 60px 0px;
 }
 
 .partners .owl-item {
 	text-align: center;
 	cursor: pointer;
+
 }
 
 .partners .partner-item img {
 	max-width: 156px;
 	margin: auto;
+
 }
 
 
@@ -1301,6 +1303,14 @@ footer .contact-form button.filled-button:hover {
 	.contact-item {
 		margin-bottom: 30px;
 	}
+	.responsive-img img{
+		width:150px !important;
+	}
+	.partners .partner-item img {
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;
+	
+	}
+	
 }
 
 @media (max-width: 992px) {
