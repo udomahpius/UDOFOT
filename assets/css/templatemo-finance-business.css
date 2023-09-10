@@ -701,11 +701,30 @@ ul.slick-dots {
 
 
 /* Testimonials Style */
+@media screen and (max-width:700px) {
+	.testimonial-item-height .inner-content{
+		height: 100% !important;
+	}
+	
+}
+@media screen and (max-width:700px) {
+	.testimonial-item-height-1 .inner-content{
+		height: 100% !important;
+	}
+	
+}
+.testimonial-item-height-1 .inner-content{
+	height: 40vh !important;
+}
+
+
 
 .about-testimonials {
 	margin-top: 0px!important;
 }
-
+.testimonial-item-height .inner-content{
+	height: 30vh !important;
+}
 .testimonials {
 	margin-top: 140px;
 	background-color: #f7f7f7;

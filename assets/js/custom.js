@@ -151,7 +151,7 @@ jQuery( document ).ready(function( $ ) {
 
 let hidden_section = document.querySelector('.button-hide-1');
 let arrow_1 = document.querySelector('.arrow-up-1');
-let arrow_2 = document.querySelector(".arrow-down-1");
+let arrow_down_1 = document.querySelector(".arrow-down-1");
 let view_hidden_content_1 = document.querySelector('.view-1');
 let statement = false;
 
@@ -163,13 +163,43 @@ hidden_section.addEventListener('click', () => {
     if (!statement) {
         arrow_1.classList.remove("hide");
         view_hidden_content_1.classList.remove("hide");
-        arrow_2.classList.add("hide");
+        arrow_down_1.classList.add("hide");
         statement = true;
     } else {
         arrow_1.classList.add("hide");
         view_hidden_content_1.classList.add("hide");
-        arrow_2.classList.remove("hide");
+        arrow_down_1.classList.remove("hide");
         statement = false;
+
+    }
+})
+
+
+// item two
+let hidden_section_2 = document.querySelector('.button-hide-2');
+let arrow_2 = document.querySelector('.arrow-up-2');
+let arrow_down_2 = document.querySelector(".arrow-down-2");
+let view_hidden_content_2 = document.querySelector('.view-2');
+let text_2 = document.querySelector('.show-text-2')
+let statement_2 = false;
+
+arrow_2.classList.add("hide");
+view_hidden_content_2.classList.add("hide")
+
+
+hidden_section_2.addEventListener('click', () => {
+    if (!statement_2) {
+        arrow_2.classList.remove("hide");
+        view_hidden_content_2.classList.remove("hide");
+        arrow_down_2.classList.add("hide");
+        text_2.innerHTML = "Show Less";
+        statement_2 = true;
+    } else {
+        arrow_2.classList.add("hide");
+        view_hidden_content_2.classList.add("hide");
+        arrow_down_2.classList.remove("hide");
+        text_2.innerHTML = "Show More"
+        statement_2 = false;
 
     }
 })
