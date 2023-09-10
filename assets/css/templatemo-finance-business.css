@@ -1081,10 +1081,12 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/page-heading-bg.jpg);
+	background-image: url(../images/udofot\ jacob\ 1.jpeg);
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-blend-mode: soft-light;
+	background-color: #1b1902;
+	background-size:cover;
 	padding: 230px 0px 150px 0px;
 	color: #fff;
 }

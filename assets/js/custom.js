@@ -203,3 +203,8 @@ hidden_section_2.addEventListener('click', () => {
 
     }
 })
+
+
+// show date 
+document.querySelector('.display-date').innerHTML = new Date().getFullYear();
+
